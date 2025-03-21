@@ -1,0 +1,76 @@
+
+<!-- Hide and Show an element 
+
+    Add another button lable "hide Text".
+    When the button is clicked , a paragrapjt should hidden.\
+    if the text is already hidden, the button should show the paragrapoh again 
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .click{
+            border: 1px solid black;
+            padding: 20px;
+            text-align: center;
+            margin-top: 100px;
+            background:#C68EFD;
+        }
+        body{
+            background: linear-gradient(90deg, #FFFAEC, #5ccae6);
+        }
+        h1{
+            text-align: center;
+            color: #FFFAEC;
+        }
+        button{
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color: #E9A5F1;
+            color: #453a3e;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        p{
+            font-size: 20px;
+            color: #FFFAEC;
+        }
+        .click{
+            text-align: center;
+            margin-top: 100px;
+        }
+
+    </style>
+</head>
+
+<body onload="alertMessage()">
+    <div class="click">
+        <h1>Hide and Show an element</h1>
+        
+        <button onclick="hideText()">Show Text</button>
+        <p id="para">This is a paragraph</p>
+        
+        <script>
+            function hideText(){
+                var para = document.getElementById('para');
+                if(para.style.display != 'none'){
+                    para.style.display = 'none';
+                }else{
+                    para.style.display = 'block';
+                }
+            }
+            function alertMessage(){
+                alert("Please  Clicked the button " );
+            }
+            </script>
+            </div>
+
+</body>
+</html>

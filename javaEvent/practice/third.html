@@ -1,0 +1,81 @@
+<!-- change image on click
+ add an image  and button labled "Change Image"
+ when the user clicks the button , the image should change to another image.
+ 
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        h4{
+            text-align: center;
+            color: #529223;
+        }
+        .hai{
+            text-align: center;
+            margin-top: 100px;
+            border: 2px solid black;
+            padding: 20px;
+            width: 50%;
+            margin-left: 25%;
+            background-color: #FFF9D0;
+        }
+        img{
+            width: 50%;
+            height: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+
+        }
+        button{
+            padding: 10px;
+            background-color: #80CBC4;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 30px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+
+        }
+        body{
+            background: linear-gradient(90deg, #5AB2FF, #CAF4FF);
+        }
+
+
+    </Style>
+</head>
+
+<body onload="alertMessage()">
+    <div class="hai">
+            <h4>
+                Change Image on Click
+            </h4>
+        <button id="change-image-btn">Change Image</button>
+        <img src="img/hem;lock.jpg" alt="" id="image">
+        <script>
+            var image = document.getElementById('image');
+            var btn = document.getElementById('change-image-btn');
+            var images = ['img/pink rose.jpg', 'img/tulips.jpg', 'img/hem;lock.jpg'];
+            var i = 0;
+            btn.addEventListener('click', function(){
+                i = i < images.length ? ++i : 0;
+                image.src = images[i];
+            });
+              function alertMessage(){
+                alert("Please  Clicked the button " );
+            }
+            </script>
+            </div>
+
+</body>
+</html>

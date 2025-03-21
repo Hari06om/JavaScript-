@@ -1,0 +1,71 @@
+<!-- Change text on click 
+    
+    create button labled "Cleck me ".
+    When the user c;ick the button , teh txt oif a pragraph(<P> ) should change to  "Button Clicked"
+        give the alert message "Button Clicked" when the button is clicked.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+           body{
+            background: linear-gradient(90deg, #E9A5F1, #CAF4FF);
+        }
+        .click button {
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color: #E9A5F1;
+            color: #453a3e;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .click
+        {
+            border: 1px solid black;
+            padding: 20px;
+            text-align: center;
+            margin-top: 100px;
+            background:#C68EFD;
+        }
+        p {
+            font-size: 20px;
+            color: rgb(201, 41, 218);
+        }
+        .click {
+            text-align: center;
+            margin-top: 100px;
+        }
+      
+
+    </style>
+</head>
+<body onload="alertMessage()">
+    <div class="click ">
+        <h1 >Change text on click</h1>
+
+        <button onclick="changeText()">Click me</button>
+        <!-- <button onclick="alertMessage()">Click me</button> -->
+        <p id="para">This is a paragraph</p>
+        
+        <script>
+            function changeText(){
+                document.getElementById('para').innerHTML = "Button Clicked";
+                // alert("Button Clicked");
+            }
+            function alertMessage(){
+                alert("Please  Clicked the button " );
+            }
+
+            </script>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(8, 41, 66);
+        }
+        .hai {
+            text-align: center;
+            margin-top: 100px;
+            border: 2px solid black;
+            padding: 20px;
+            width: 50%;
+            margin-left: 25%;
+            background-color: lightblue;
+        }
+        p {
+            font-size: 20px;
+            color: rgb(8, 41, 66);
+        }
+        button {
+            padding: 10px;
+            background-color: rgb(8, 41, 66);
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 30px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 18px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hai">
+        <p>This is an example of the OnClick Event in JavaScript.</p>
+        <br>
+        <input type="text" id="name" placeholder="Enter your name">
+        <br>
+        <br>
+        <button onclick="hai()">Click ME</button>
+        <script>
+            function hai() {
+                var name = document.getElementById("name").value;
+                alert("Hai, " + name);
+            }
+        </script>
+    </div>
+</body>
+</html>
